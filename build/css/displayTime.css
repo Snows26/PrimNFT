@@ -1,0 +1,410 @@
+body{
+    background: #fcfcfc;;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+#all{
+    display: grid;
+    grid-template-columns: 386px;
+    grid-template-rows: 75px;
+    grid-template-areas:
+        "nav header"
+        "nav main";
+}
+
+/* cabeçalho */
+
+header{
+    background: linear-gradient(178deg, #8268ba 32.48%, #7459aff3 70.28%);
+    height: 75px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    grid-area: header;
+}
+.pesquisa{
+    height: 20px;
+    width: 28%;
+    padding: 10px 25px 10px 25px;
+    border-radius: 40px;
+    border: none;
+    margin: 0 auto;
+}
+.pesquisa:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #fefefe;
+}
+.pesquisa:hover{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #f4f4f4;
+}
+.pesquisa::placeholder{
+    color: #3c3c3c;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* nav-lateral */
+
+.nav-primaria{
+    display: initial;
+}
+.nav-primaria-close{
+    display: none;
+}
+nav{
+    background: linear-gradient(-35.55deg, #49317b 32.48%, #8d72c0  116.28%);
+    width: 386px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-right: 1px solid #6c009e8b;
+	grid-area: nav;
+}
+
+#dashboard-perfil{
+    display: grid;
+    width: 310px;
+    margin: 0 auto;
+    padding-top: 60px;
+    grid-template-columns: 74px 150px 1fr;
+    grid-template-rows: 74px;
+}
+#dashboard-perfil b{
+    font-weight: 550;
+}
+#img-perfil{
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px solid white;
+}
+#nome-perfil{
+    color: white;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0px;
+    margin-left: 15px;
+    margin-top: 2px;
+    font-size: 17px;
+    font-weight: 300;
+}
+#line-nome{
+    width: 208px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 46px;
+    margin-left: 15px;
+}
+#bell{
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 53px;
+    width: 25px;
+    height: 25px;
+    background: rgba(121, 1, 181, 0);
+    border: none;
+    cursor: pointer;
+}
+#bell img{
+    transform: translateX(-5px);
+
+}
+#points-all{
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    color: white;
+    margin-left: 15px;
+    margin-top: 49px;
+}
+#points-all img{
+    margin-right: 4px;
+}
+ul{
+    display: block;
+    align-items: center;
+    padding: 0;
+    margin-top: 90px; 
+}
+#list-time, #link-time #list-time{
+    color: white;
+    margin: 0 auto;
+    font-size: 19px;
+    font-weight: 450;
+    list-style-type: none;
+    padding: 20px 0px 20px 0px;
+    border-top: 2px solid #ffffff40;;
+    width: 310px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+#list-time:nth-child(1){
+    border-radius: 5px 5px 0px 0px;
+}
+#link-time #list-time:nth-child(1){
+    border-radius: 0px;
+}
+#list-time:nth-child(4){
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 300px;
+}
+#list-time:hover{
+    background-color: #d49dff0e;
+}
+#list-time:nth-child(1){
+    border-top: 0px solid;
+}
+#list-time img{
+    margin-left: 4px;
+    margin-right: 25px;
+}
+#link-time{
+    text-decoration: none;
+}
+li:nth-child(4){
+    border-radius: 0px 0px 5px 5px;
+   
+}
+
+
+/* notiifcaçao */
+
+.nav-modo-notificacao-close{
+    display: none;
+}
+#all-notif{
+    display: block;
+    width: 81%;
+    height: 700px;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+#all-notif::-webkit-scrollbar {
+    background: none;
+    width: 8px;
+}
+#all-notif::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background: none; 
+}
+#all-notif::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #efefef; 
+}
+#corpo-notif{
+    margin: 0px;
+    width: 100%;
+    border-spacing: 0px;
+}
+td h1, td p{
+    margin: 0px;
+}
+#body-notif{
+    text-align: left;
+}
+#body-notif td{
+    color: white;
+}
+#body-notif td h1{
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+#body-notif td p{
+    font-size: 10pt;
+}
+#corpo-notif tbody td{
+    padding: 17px 0px 17px 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.134);
+}
+#all-title-notif{
+    display: flex;
+}
+#nav-modo-notificacao #titulo-notif{
+    margin: 75px 0px 25px 10px;
+    font-size: 22pt;
+    color: white;
+}
+#back-notif{
+    margin: 74px 0px 25px 25px;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+#back-notif img{
+    width: 37;
+    height: 36;
+}
+
+
+/* resto body*/
+
+main{
+    grid-area: main;
+    margin-left: 11.5%;
+}
+#topo-times{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 56px / 36px;
+    grid-template-areas:
+        "img nomeTime"
+        "img titleDesc"
+        "img desc";
+    margin-top: 70px;
+    align-items: center;
+}
+#img-time{
+	grid-area: img;
+    max-width: 200px;
+    max-height: 200px;
+}
+#title-time{
+	grid-area: nomeTime;
+    margin: 15px 0px 0px 20px;
+    font-size: 34px;
+}
+#title-descricao{
+	grid-area: titleDesc;
+    margin-bottom: 0px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+#descricao{
+	grid-area: desc;
+    margin-top: 0px;
+    margin-right: 15%;
+    font-size: 14px;
+    margin-left: 25px;
+    width: 78%;
+    overflow-wrap: anywhere;
+}
+#infomacoes{
+    width: 87%;
+    height: 300px;
+    margin: 0px 11.5% 0px 0px;
+    margin-top: 30px;
+    background: linear-gradient(263.99deg, rgba(78, 33, 172, 0.8) -1.9%, rgba(94, 51, 185, 65%) 104.23%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+    "info info info"
+    "typeJogo numberPlayer dataCampanha"
+    "meta experiencia contrato";
+}
+#info{
+    grid-area: info;
+}
+#title-info{
+    grid-area: titleInfo;
+    margin: 20px 0px 0px 20px;
+    color: #fefefe;
+}
+#line-ct{
+    height: 2px;
+    background-color: #fefefe;
+    width: 96%;
+    margin: 5px 0px 0px 20px;
+}
+#jogo-type{
+    grid-area: typeJogo;
+}
+#number-player{
+    grid-area: numberPlayer;
+}
+#data-campanha{
+    grid-area: dataCampanha;
+}
+#meta{
+    grid-area: meta;
+}
+#experiencia{
+    grid-area: experiencia;
+}
+#contrato{
+    grid-area: contrato;
+}
+#title-jogo, #title-number-player, #title-data-campanha, #title-meta, #title-experiencia, #title-contrato{
+    margin-bottom: 8px;
+    color: #fefefe;
+    display: block;
+    text-align: -webkit-center;
+    font-weight: bold;
+}
+#content-jogo, #content-number-player, #content-data-campanha, #content-meta, #content-experiencia, #content-contrato{
+    margin-top: 0px;
+    color: #fefefe;
+    display: block;
+    text-align: -webkit-center;
+}
+#content-contrato{
+    width: 100px;
+    height: 30px;
+    font-size: 10pt;
+    background-color:#fefefe;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.continue{
+    width: 87%;
+    height: 45px;
+    background: linear-gradient(263.99deg, rgb(33 95 172 / 80%) -1.9%, rgb(51 185 185 / 50%) 104.23%);;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    color: #fcfcfc;
+    font-size: 12pt;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+.analise{
+    width: 87%;
+    height: 45px;
+    background: linear-gradient(263.99deg, rgba(172, 165, 33, 0.8) -1.9%, rgba(51, 185, 78, 0.5) 104.23%);;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    color: #fcfcfc;
+    font-size: 12pt;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 40px;
+    display: none;
+}
+#logOut{
+    color: white;
+    padding: 13px 50px;
+    margin: 0 auto;
+    border: 2px white solid;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14pt;
+    margin-top: 100px;
+}
+

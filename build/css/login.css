@@ -1,0 +1,294 @@
+body{
+    background: linear-gradient(359.53deg, rgba(0, 0, 0, 0.31) 0.42%, rgba(0, 0, 0, 0.225719) 46.77%, rgba(0, 0, 0, 0.0403) 107.63%);
+    background: linear-gradient(37.55deg, rgba(68, 24, 158, 0.8) 32.48%, rgba(94, 51, 185, 0.496) 116.28%);
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+#elipse1{
+    position: absolute;
+    width: 456px;
+    height: 489.36px;
+    left: 170px;
+    top: 150.68px;
+    background: rgba(244, 120, 255, 0.5);
+    opacity: 0.6;
+    filter: blur(90px);
+    z-index: -1;
+}
+#elipse2{
+    position: absolute;
+    width: 356px;
+    height: 310.36px;
+    right: 18vw;
+    top: 35vh;
+    background: rgba(244, 120, 255, 0.5);
+    filter: blur(80px);
+    z-index: -1;
+}
+#elipse3{
+    position: absolute;
+    width: 456px;
+    height: 489.36px;
+    left: 826px;
+    top: 413.16px;
+    background: rgba(244, 120, 255, 0.636);
+    filter: blur(223px);
+    z-index: -1;
+}
+#elipse4{
+    position: absolute;
+    width: 13vw;
+    height: 25vh;
+    left: 86%;
+    top: -149.17px;
+    background: rgba(244, 120, 255, 0.67);
+    opacity: 0.80;
+    filter: blur(123px);
+    z-index: -1;
+}
+main{
+    display: grid;
+    width: 1100px;
+    height: 627px;
+    grid-template-columns: 600px 500px;
+    grid-template-rows: 627px;
+    margin-top: 17.70vh;
+    margin-bottom: 17.70vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    overflow: hidden;
+    justify-content: center;
+    z-index: 4;
+}
+.logo{
+    display: none;
+}
+li.glide__slide img{
+    width: 600px;
+    height: 627px;
+}
+.glide__bullet{
+    background-color:#DAABFF; 
+    border: 0.1px solid #DAABFF; 
+    height: 14px; 
+    border-radius: 100%; 
+    margin: 2px;
+}
+#right{
+    padding: 45px 90px 50px 90px;
+    background-color: #fcfcfc;
+}
+.name-login{
+    margin-top: 0px;
+    font-size: 23pt;
+    font-weight: 500;
+}
+.sub-name-login{
+    color: #737373;
+    font-weight: 400;
+}
+.name-email{
+    font-size: 11pt;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+.input-email, .input-password{
+    background-color: #fcfcfc;
+    border: none;
+    border-bottom: #000 2px solid;
+    width: 100%;
+    height: 35px;
+}
+.input-email:hover, .input-password:hover{
+    outline: 0;
+    background-color: #f6f6f6;
+}
+.input-email:focus, .input-password:focus{
+    outline: 0;
+    background-color: #f0f0f0;
+}
+.name-password{
+    font-size: 11pt;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 500;
+}
+.forgot{
+    margin-top: 8px;
+    font-size: 9pt;
+    font-style: normal;
+    font-weight: 400;
+}
+.click-forgot{
+    color: #0066FF;
+}
+.click-forgot:hover{
+    color: #001AFF;
+    cursor: pointer;
+}
+.button-login{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(263.99deg, rgba(78, 33, 172, 0.8) -1.9%, rgba(94, 51, 185, 0.496) 104.23%);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    color: #fcfcfc;
+    font-size: 12pt;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button-google{
+    font-size: 12pt;
+    padding: 10.5px 82.4px;
+    cursor: pointer;
+    background: 
+    linear-gradient( #ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #ab95d9, #724ebc) border-box;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    font-weight: 600;
+    color: #8368bf;
+    margin-top: 9px;
+}
+.outro{
+    color: #737373;
+    text-align: center;
+    margin: 14px 0px 14px 0px;
+    font-weight: 600;
+}
+.line{
+    height: 2px;
+    width: 125px;
+    background-color: #737373;
+}
+.tudo-outro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button-register{
+    font-size: 12pt;
+    padding: 10.5px 125px;
+    cursor: pointer;
+    background: 
+    linear-gradient( #ffffff, #ffffff) padding-box,
+    linear-gradient(to right, #ab95d9, #724ebc) border-box;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    font-weight: 600;
+    color: #8368bf;
+}
+
+@media screen and (max-width: 1110px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 1000px;
+        margin-top: 0px;
+        margin-bottom: 17.70vh;
+    }
+    li.glide__slide img{
+        width: 500px;
+        height: 250px;
+    }
+    .glide__track{
+        border-radius: 15px;
+    }
+    #right{
+        padding: 50px 75px 50px 75px;
+        background-color: #fcfcfc;
+        border-radius: 25px;
+    }
+    #left{
+        width: 500px;
+        height: 270px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .button-google{
+        padding: 10.5px 147.5px;
+    }
+    .line{
+        width: 155px;
+    }
+    .button-register{
+        padding: 10.5px 190px;
+    }
+}
+@media screen and (max-width: 640px){
+    body{
+        background: #fcfcfc;
+    }
+    #elipse1, #elipse2, #elipse3, #elipse4{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 940px;
+        margin-top: 0px;
+        margin-bottom: 0vh;
+    }
+    .logo{
+        display: flex;
+        width: 100px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .name-login{
+        font-size: 19pt;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    .sub-name-login{
+        font-weight: 300;
+        font-size: 10pt;
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+    li.glide__slide img{
+        width: 300px;
+        height: 150px;
+    }
+    .glide__track{
+        border-radius: 25px;
+    }
+    .glide__bullet{
+        height: 7px;
+        width: 7px; 
+        padding: 0px;
+    }
+    #right{
+        padding: 0px 45px 150px 45px;
+        background-color: #fcfcfc;
+        border-radius: 25px;
+    }
+    #left{
+        display: none;
+    }
+    .button-google{
+        padding: 10.5px 0vh;
+        width: 100%;
+    }
+    .line{
+        width: 35%;
+    }
+    .button-register{
+        padding: 10.5px 0vh;
+        width: 100%;
+    }
+}
+

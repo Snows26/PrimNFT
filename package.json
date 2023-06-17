@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "aos": "^2.3.4",
+    "card": "^2.5.4",
+    "install": "^0.13.0",
+    "izitoast": "^1.4.0"
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRIM</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../image/Ativo 1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div id="elipse1"></div>
+    <div id="elipse2"></div>
+    <div id="elipse3"></div>
+    <div id="elipse4"></div>
+
+    <header>
+      <img id="img-header" src="../image/Ativo 1.png" />
+      <p class="content-header">HOME</p>
+      <div id="line-1"></div>
+      <p class="content-header">SOBRE</p>
+      <div id="line-2"></div>
+      <p class="content-header">NOTÍCIAS</p>
+      <div id="line-3"></div>
+      <p class="content-header">FORUM</p>
+      <div id="line-4"></div>
+      <a href="php/login.php" id="link-header"
+        ><p id="login">LOGIN / REGISTRO</p></a
+      >
+      <img src="../image/menu.png" class="menu" id="hub" onclick="menu()" />
+    </header>
+
+    <div class="side-nav-close" id="menu">
+      <img src="../image/x.png" id="x" onclick="menuClose()" />
+      <p class="content-header-menu">HOME</p>
+      <div class="line-1-menu"></div>
+      <p class="content-header-menu">ABOUT</p>
+      <div class="line-2-menu"></div>
+      <p class="content-header-menu">NEWS</p>
+      <div class="line-3-menu"></div>
+      <p class="content-header-menu">FORUM</p>
+      <a href="php/login.php" id="link-nav"
+        ><p id="login-menu">LOGIN / REGISTER</p></a
+      >
+    </div>
+
+    <main id="main-1">
+      <div id="elipse-yellow"></div>
+      <p id="content-main">JOGUE<br />SE DIVIRTA<br />VENÇA<br />E RECEBA</p>
+      <p id="sub-content-main">
+        Venha fazer parte da PRIM, fácil acesso a Escolas NFT's e ferramentas
+        que facilitam a criação de tal tambem.
+      </p>
+      <img id="img-main" src="../image/playing-hand.png" />
+      <div id="buttons">
+        <input id="button-main-1" type="button" value="Vamos lá" />
+        <input id="button-main-2" type="button" value="Saber Mais" />
+      </div>
+    </main>
+
+    <div id="main-2-right">
+      <h4 id="title-content-s">Primeiro...</h4>
+      <h1 id="title-content">O QUE É ESCOLA NFT?</h1>
+      <img
+        id="img-trofeu"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        src="../image/Group 10trofeu.png"
+      />
+      <p id="subcontent-main2">
+        O grande problema de jogos como Axie Infinity, é que o jogo não
+        disponibiliza personagens de graça para você começar no jogo, você é
+        obrigado a fazer um investimento inicial pra começar a jogar e esse
+        investimento costuma ser muito alto, os valores para a montagem de um
+        time de Axies (composto por 3 personagens) chegam em cerca de US$ 271,
+        grande parte dos interessados não consegue esse investimento para jogar.
+        Com esse problema surgiram as escolas NFT’s, antes de tudo, escolas
+        NFT’s não são escolas onde há um professor ensinando aluno, é apenas um
+        termo utilizado para um modelo de negócio, que consiste em uma “ponte”
+        que é feita entre duas pessoas, uma delas tem o capital para a compra
+        dos personagens mas não possui o tempo para estar jogando com eles, já o
+        outro lado da
+      </p>
+    </div>
+    <main id="main-2">
+      <div id="main-2-left">
+        <img id="bubble-left-1" src="../image/Vectorbubble.png" />
+        <div id="square-left-background">
+          <img id="img-square-left" src="../image/esquema.png" />
+        </div>
+      </div>
+    </main>
+    <div id="main-3-left">
+      <p id="subcontent-main3">
+        “ponte” é representado por uma pessoa que não tem o capital inicial mas
+        possui o interesse e tempo pra estar jogando, com os dois lados da ponte
+        estabelecido, o investidor (pessoa que possui o investimento inicial) em
+        cima de um contrato ele empresta a conta para o jogador (pessoa que não
+        possui o investimento inicial) estar jogando para ele, conforme o
+        jogador vai ganhando batalhas na conta do investidor, ele vai ganhando
+        moedas do jogo, com essas moedas o investidor pode transformar em
+        dinheiro mas por conta do contrato que foi estabelecido o investidor
+        deve pagar o que foi definido em contrato com o jogador, os contratos
+        podem ser de 50% para cada, 60% para o investidor e 40% para o jogador,
+        tudo depende do que forcombinado antes.
+      </p>
+    </div>
+    <div id="square-right-background"></div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
